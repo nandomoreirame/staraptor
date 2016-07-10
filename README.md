@@ -1,1 +1,1 @@
-# template-starter
+# Template Starter

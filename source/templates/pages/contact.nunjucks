@@ -1,0 +1,5 @@
+{% extends "layouts/main.nunjucks" %}
+
+{% block content %}
+  <h1>This is the <strong>Contact</strong> page</h1>
+{% endblock %}
