@@ -1,5 +1,7 @@
 # Template Starter
 
+Quick start templates using [GulpJS](http://gulpjs.com/), [SASS](http://sass-lang.com/), [jQuery](http://jquery.com/) and [Mozilla Nunjucks](https://mozilla.github.io/nunjucks/)
+
 ## Installation
 
  1. Install globally dependencies: `npm i -g gulp bower browser-sync`
