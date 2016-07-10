@@ -11,12 +11,13 @@
     <link rel="stylesheet" href="{{ config.css_path }}main.css">
   </head>
   <body>
+    <main class="container">
+      {% include "partials/header.njk" %}
 
-    {% include "partials/header.njk" %}
+      {% block content %} {% endblock %}
 
-    {% block content %} {% endblock %}
-
-    {% include "partials/footer.njk" %}
+      {% include "partials/footer.njk" %}
+      </main>
 
     <script src="{{ config.javascripts_path }}plugins.min.js"></script>
     <script src="{{ config.javascripts_path }}main.js"></script>
