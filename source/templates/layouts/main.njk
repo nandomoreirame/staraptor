@@ -12,11 +12,11 @@
   </head>
   <body>
     <main class="container">
-      {% include "partials/header.njk" %}
+      {% include "partials/_header.njk" %}
 
       {% block content %} {% endblock %}
 
-      {% include "partials/footer.njk" %}
+      {% include "partials/_footer.njk" %}
       </main>
 
     <script src="{{ config.javascripts_path }}plugins.min.js"></script>
