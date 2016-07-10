@@ -6,7 +6,7 @@
  2. Install bundler gem: `gem install bundler`
  3. Clone the repo: `git clone https://github.com/nandomoreirame/template-starter.git`
  4. Navigate to the directory: `cd template-starter/`
- 5. Install Ruby and NodeJS dependencies: `bundle install && npm i`
+ 5. Install local dependencies: `bundle install && npm i && bower install`
  6. Run foreman: `foreman start`
  7. Open: [localhost:3000](http://localhost:3000/)
 
