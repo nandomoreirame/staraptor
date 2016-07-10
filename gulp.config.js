@@ -12,7 +12,7 @@ var config = {
     css: 'dist/assets/css/',
     javascripts: 'dist/assets/js/',
     images: 'dist/assets/images/'
-  },
+  }
 };
 
 module.exports = config;

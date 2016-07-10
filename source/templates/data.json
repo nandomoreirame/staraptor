@@ -1,0 +1,7 @@
+{
+  "config": {
+    "css_path": "./assets/css/",
+    "javascripts_path": "./assets/js/",
+    "images_path": "./assets/images/"
+  }
+}

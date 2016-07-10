@@ -2,7 +2,7 @@
   "name": "template-starter",
   "version": "0.0.1",
   "description": "",
-  "license": "MIT",
+  "license": "CC",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -21,7 +21,9 @@
     "gulp-autoprefixer": "^3.1.0",
     "gulp-combine-mq": "^0.4.0",
     "gulp-cssnano": "^2.1.2",
+    "gulp-data": "^1.2.1",
     "gulp-include": "^2.3.0",
+    "gulp-jsbeautifier": "^2.0.3",
     "gulp-nunjucks-render": "^2.0.0",
     "gulp-plumber": "^1.1.0",
     "gulp-prettify": "^0.4.0",
