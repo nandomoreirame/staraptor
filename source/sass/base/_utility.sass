@@ -11,6 +11,11 @@
 .pull-left
 	float: left !important
 
+
+//
+// Texts
+//
+
 .label-inline
   font-weight: normal
   display: inline-block
@@ -21,9 +26,11 @@
   overflow: hidden
   text-overflow: ellipsis
 
-//
-// Text align
-//
+.break-word
+  word-wrap: break-word !important
+
+.no-wrap
+  white-space: nowrap !important
 
 .text-left
   text-align: left !important
@@ -59,3 +66,17 @@
 .border-left
   border-left: $border-base
 
+//
+// Lists
+//
+
+.no-bullets
+  margin: 0
+  padding: 0
+  list-style: none
+
+.list-inline
+  @extend .no-bullets
+
+  li
+    display: inline-block
