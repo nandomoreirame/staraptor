@@ -24,7 +24,6 @@ template-starter/
 │   └── sass/
 │   │   ├── base/
 │   │   ├── components/
-│   │   ├── _ress.sass
 │   │   ├── _variables.sass
 │   │   └── main.sass
 │   │
@@ -32,12 +31,14 @@ template-starter/
 │       ├── layouts/
 │       │   └── main.njk
 │       ├── pages/
-│       │   ├── contact.njk
+│       │   ├── buttons.njk
+│       │   ├── forms.njk
+│       │   ├── grids.njk
 │       │   └── index.njk
 │       ├── partials/
 │       │   ├── _footer.njk
 │       │   ├── _header.njk
-│       │   └── _palette.njk
+│       │   └── _nav.njk
 │       └── data.json
 │
 └── tasks/
