@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "",
   "license": "CC",
-  "main": "index.js",
+  "main": "",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nandomoreirame/template-starter.git"
