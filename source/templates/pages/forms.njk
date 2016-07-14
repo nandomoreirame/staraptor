@@ -1,0 +1,41 @@
+{% extends "layouts/main.njk" %}
+
+{% block content %}
+  <h2>Forms</h2>
+
+  <form role="form">
+    <div class="form-group">
+      <label for="">Label</label>
+      <input type="text" name="" placeholder="type text">
+    </div>
+    <div class="form-group">
+      <input type="password" name="" placeholder="type password">
+    </div>
+    <div class="form-group">
+      <input type="search" name="" placeholder="type search">
+    </div>
+    <div class="form-group">
+      <select name="">
+        <option value="1">Value 1</option>
+        <option value="2">Value 2</option>
+        <option value="3">Value 3</option>
+        <option value="4">Value 4</option>
+        <option value="5">Value 5</option>
+        <option value="6">Value 6</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <select name="" multiple>
+        <option value="1">Value 1</option>
+        <option value="2">Value 2</option>
+        <option value="3">Value 3</option>
+        <option value="4">Value 4</option>
+        <option value="5">Value 5</option>
+        <option value="6">Value 6</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <textarea placeholder="textarea"></textarea>
+    </div>
+  </form>
+{% endblock %}

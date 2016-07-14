@@ -1,0 +1,57 @@
+{% extends "layouts/main.njk" %}
+
+{% block content %}
+<style type="text/css" media="screen">
+  .grid-demo {
+    background-color: #fefefe;
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+  }
+  .grid-demo span {
+    background: #e7e7e7;
+    display: block;
+    color: #343434;
+    text-align: center;
+    border-radius: .2rem;
+    font-size: 1rem;
+    height: 5rem;
+    line-height: 5rem;
+    margin: .6rem 0;
+    font-weight: 400;
+    letter-spacing: .1rem;
+  }
+</style>
+  <h2>Grids</h2>
+  <div class="container grid-demo">
+    <div class="columns">
+      <div class="column"><span>.column</span></div>
+      <div class="column"><span>.column</span></div>
+      <div class="column"><span>.column</span></div>
+      <div class="column"><span>.column</span></div>
+    </div>
+    <div class="columns">
+      <div class="column"><span>.column</span></div>
+      <div class="column"><span>.column</span></div>
+    </div>
+    <div class="columns">
+      <div class="column"><span>.column</span></div>
+      <div class="column"><span>.column</span></div>
+      <div class="column"><span>.column</span></div>
+    </div>
+    <div class="columns">
+      <div class="column"><span>.column</span></div>
+      <div class="column column-50 column-offset-25"><span>.column.column-50.column-offset-25</span></div>
+    </div>
+    <div class="columns">
+      <div class="column"><span>.column</span></div>
+      <div class="column"><span>.column</span></div>
+      <div class="column"><span>.column</span></div>
+      <div class="column"><span>.column</span></div>
+      <div class="column"><span>.column</span></div>
+      <div class="column"><span>.column</span></div>
+    </div>
+    <div class="columns">
+      <div class="column column-50 column-offset-25"><span>.column.column-50.column-offset-25</span></div>
+    </div>
+  </div>
+{% endblock %}

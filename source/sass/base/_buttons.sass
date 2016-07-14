@@ -1,0 +1,117 @@
+
+// Buttons
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+%buttons
+  border: .1rem solid transparent
+  border-radius: $border-radius-base
+  cursor: pointer
+  display: inline-block
+  font-size: $font-size-base
+  font-weight: $font-weight-normal
+  letter-spacing: $letter-spacing-base
+  transition: .1s background-color linear, .1s border-color linear
+  height: 3rem
+  line-height: 3rem
+  padding: 0 $spacing-small
+  text-align: center
+  text-decoration: none
+  white-space: nowrap
+
+  &,
+  &:focus
+    outline: none
+
+  &.is-small
+    padding: 0 $spacing-mini
+    font-size: $font-size-small
+    height: 2rem
+    line-height: 2rem
+
+  &.is-big
+    padding: 0 $spacing-base
+    font-size: $font-size-big
+    height: 4rem
+    line-height: 4rem
+
+  &.is-block
+    display: block
+    margin-bottom: $spacing-mini
+    width: 100%
+
+.button,
+.button-primary,
+#{$all-buttons} // all buttons elements by Bourbon -> http://bourbon.io/docs/#buttons
+  @extend %buttons
+  background-color: $color-primary
+  border-color: $color-primary
+  color: $color-white
+
+  &:focus,
+  &:active
+    background-color: darken($color-primary, 10%)
+    border-color: darken($color-primary, 10%)
+
+  &:hover
+    background-color: darken($color-primary, 8%)
+    border-color: darken($color-primary, 8%)
+
+.button-secondary
+  @extend %buttons
+  background-color: $color-secondary
+  border-color: $color-secondary
+  color: $color-white
+
+  &:focus,
+  &:active
+    background-color: darken($color-secondary, 10%)
+    border-color: darken($color-secondary, 10%)
+
+  &:hover
+    background-color: darken($color-secondary, 8%)
+    border-color: darken($color-secondary, 8%)
+
+.button-tertiary
+  @extend %buttons
+  background-color: $color-tertiary
+  border-color: $color-tertiary
+  color: $color-base
+
+  &:focus,
+  &:active
+    background-color: darken($color-tertiary, 10%)
+    border-color: darken($color-tertiary, 10%)
+
+  &:hover
+    background-color: darken($color-tertiary, 8%)
+    border-color: darken($color-tertiary, 8%)
+
+.button-quaternary
+  @extend %buttons
+  background-color: $color-quaternary
+  border-color: $color-quaternary
+  color: $color-white
+
+  &:focus,
+  &:active
+    background-color: darken($color-quaternary, 10%)
+    border-color: darken($color-quaternary, 10%)
+
+  &:hover
+    background-color: darken($color-quaternary, 8%)
+    border-color: darken($color-quaternary, 8%)
+
+.button-white
+  @extend %buttons
+  background-color: $color-white
+  border-color: $color-silver
+  color: $color-base
+
+  &:focus,
+  &:active
+    background-color: darken($color-white, 8%)
+    border-color: darken($color-white, 8%)
+
+  &:hover
+    background-color: darken($color-white, 3%)
+    border-color: darken($color-white, 15%)

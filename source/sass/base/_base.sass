@@ -1,0 +1,23 @@
+
+// Base css
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+@import '//fonts.googleapis.com/css?family=Roboto:300,400,700'
+
+html,
+body
+  +size(100%) // include Bourbon size mixin -> http://bourbon.io/docs/#size
+
+html
+  box-sizing: border-box
+  font-size: $font-size-unit
+
+body
+  font-size: $font-size-base
+  line-height: $line-height-base
+
+hr
+  border: 0
+  border-top: .1rem solid $border-color-base
+  margin-bottom: $spacing-base
+  margin-top: $spacing-base
