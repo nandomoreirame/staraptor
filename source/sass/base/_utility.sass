@@ -2,17 +2,14 @@
 // Utility
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-.no-border
-  border: none !important
+.clearfix
+  +clearfix // include Bourbon clearfix mixin -> http://bourbon.io/docs/#clearfix
 
 .pull-right
 	float: right !important
 
 .pull-left
 	float: left !important
-
-.clearfix
-  +clearfix // include Bourbon clearfix mixin -> http://bourbon.io/docs/#clearfix
 
 .label-inline
   font-weight: normal
@@ -39,4 +36,26 @@
 
 .text-just
   text-align: justify !important
+
+//
+// Borders
+//
+
+.no-border
+  border: none !important
+
+.border-all
+  border: $border-base
+
+.border-top
+  border-top: $border-base
+
+.border-bottom
+  border-bottom: $border-base
+
+.border-right
+  border-right: $border-base
+
+.border-left
+  border-left: $border-base
 
