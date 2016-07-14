@@ -5,7 +5,8 @@ var config = {
     templates: 'source/templates/',
     sass: 'source/sass/',
     javascripts: 'source/javascripts/',
-    components: 'source/components/'
+    components: 'source/components/',
+    images: 'source/images/'
   },
   dist: {
     templates: 'dist/',
