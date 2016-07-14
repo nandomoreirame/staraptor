@@ -80,3 +80,37 @@
 
   li
     display: inline-block
+
+// Hide visually and from screen readers:
+// http://juicystudio.com/article/screen-readers-display-none.php
+.hidden
+  display: none !important
+  visibility: hidden
+
+// Hide only visually, but have it available for screen readers:
+// http://snook.ca/archives/html_and_  css/hiding-content-for-accessibility
+.visually-hidden
+  border: 0
+  clip: rect(0 0 0 0)
+  height: 1px
+  margin: -1px
+  overflow: hidden
+  padding: 0
+  position: absolute
+  width: 1px
+
+// Extends the .visually-hidden class to allow the element
+// to be focusable when navigated to via the keyboard:
+// https://www.drupal.org/node/897638
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus
+  clip: auto
+  height: auto
+  margin: 0
+  overflow: visible
+  position: static
+  width: auto
+
+// Hide visually and from screen readers, but maintain layout
+.invisible
+  visibility: hidden
