@@ -39,24 +39,11 @@
     margin-bottom: $spacing-mini
     width: 100%
 
+  &.is-rounded
+    border-radius: 100px
+
 .button,
-.button-primary,
 #{$all-buttons} // all buttons elements by Bourbon -> http://bourbon.io/docs/#buttons
-  @extend %buttons
-  background-color: $color-primary
-  border-color: $color-primary
-  color: $color-white
-
-  &:focus,
-  &:active
-    background-color: darken($color-primary, 10%)
-    border-color: darken($color-primary, 10%)
-
-  &:hover
-    background-color: darken($color-primary, 8%)
-    border-color: darken($color-primary, 8%)
-
-.button-secondary
   @extend %buttons
   background-color: $color-secondary
   border-color: $color-secondary
@@ -70,36 +57,6 @@
   &:hover
     background-color: darken($color-secondary, 8%)
     border-color: darken($color-secondary, 8%)
-
-.button-tertiary
-  @extend %buttons
-  background-color: $color-tertiary
-  border-color: $color-tertiary
-  color: $color-base
-
-  &:focus,
-  &:active
-    background-color: darken($color-tertiary, 10%)
-    border-color: darken($color-tertiary, 10%)
-
-  &:hover
-    background-color: darken($color-tertiary, 8%)
-    border-color: darken($color-tertiary, 8%)
-
-.button-quaternary
-  @extend %buttons
-  background-color: $color-quaternary
-  border-color: $color-quaternary
-  color: $color-white
-
-  &:focus,
-  &:active
-    background-color: darken($color-quaternary, 10%)
-    border-color: darken($color-quaternary, 10%)
-
-  &:hover
-    background-color: darken($color-quaternary, 8%)
-    border-color: darken($color-quaternary, 8%)
 
 .button-white
   @extend %buttons
