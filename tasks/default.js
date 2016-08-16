@@ -8,6 +8,7 @@ gulp.task('default', [
   'scripts',
   'scripts:vendor',
   'images',
+  'fonts',
   'watch'
 ]);
 
@@ -15,5 +16,6 @@ gulp.task('build', [
   'templates',
   'sass:min',
   'scripts:min',
-  'images'
+  'images',
+  'fonts'
 ]);
