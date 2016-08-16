@@ -1,4 +1,4 @@
-# Template Starter
+# Staraptor
 
 > Staraptor is a quick start templates using [GulpJS](http://gulpjs.com/), [Bower](https://bower.io/), [SASS](http://sass-lang.com/), [jQuery](http://jquery.com/) and [Mozilla Nunjucks](https://mozilla.github.io/nunjucks/)
 
