@@ -1,7 +1,7 @@
 .DS_Store
-source/components
 node_modules
 bower_components
+source/bower
 .sass-cache
 .npm
 dist/

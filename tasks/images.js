@@ -2,16 +2,13 @@
 
 var gulp   = require('gulp');
 var config = require('../gulp.config.js');
-
-var plumber  = require('gulp-plumber');
-var size     = require('gulp-size');
-var imagemin = require('gulp-imagemin');
+var $      = require('gulp-load-plugins')();
 
 gulp.task('images', function () {
-  gulp.src([ config.source.images + '*' ])
-    .pipe(plumber())
-    .pipe(imagemin())
-    .pipe(size({ title: 'Build main.js', showFiles: true }))
+  return gulp.src(config.source.images + '/**/*')
+    .pipe($.plumber(config.plumberErrorHandler))
+    .pipe($.cache($.imagemin()))
+    .pipe($.size({ title: 'Build images', showFiles: true }))
     .pipe(gulp.dest(config.dist.images))
-    .pipe(plumber.stop());
+    .pipe($.plumber.stop());
 });

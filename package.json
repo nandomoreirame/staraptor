@@ -1,30 +1,34 @@
 {
-  "name": "template-starter",
+  "name": "staraptor",
   "version": "0.0.1",
-  "description": "",
-  "license": "CC",
+  "description": "Staraptor is a quick start templates using GulpJS, Bower, SASS, jQuery and Mozilla Nunjucks",
+  "license": "MIT",
   "main": "",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nandomoreirame/template-starter.git"
+    "url": "git+https://github.com/nandomoreirame/staraptor.git"
   },
   "author": [
     "Fernando Moreira <nandomoreira.me@gmail.com>"
   ],
   "bugs": {
-    "url": "https://github.com/nandomoreirame/template-starter/issues"
+    "url": "https://github.com/nandomoreirame/staraptor/issues"
   },
-  "homepage": "https://github.com/nandomoreirame/template-starter#readme",
+  "homepage": "https://github.com/nandomoreirame/staraptor#readme",
   "devDependencies": {
     "bower": "^1.7.9",
+    "browser-sync": "^2.14.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
+    "gulp-cache": "^0.4.5",
     "gulp-combine-mq": "^0.4.0",
     "gulp-cssnano": "^2.1.2",
     "gulp-data": "^1.2.1",
     "gulp-imagemin": "^3.0.1",
     "gulp-include": "^2.3.0",
     "gulp-jsbeautifier": "^2.0.3",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-notify": "^2.2.0",
     "gulp-nunjucks-render": "^2.0.0",
     "gulp-plumber": "^1.1.0",
     "gulp-prettify": "^0.4.0",

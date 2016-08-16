@@ -6,8 +6,8 @@
 
  1. Install globally dependencies: `npm i -g gulp bower browser-sync`
  2. Install bundler gem: `gem install bundler`
- 3. Clone the repo: `git clone https://github.com/nandomoreirame/template-starter.git`
- 4. Navigate to the directory: `cd template-starter/`
+ 3. Clone the repo: `git clone https://github.com/nandomoreirame/staraptor.git`
+ 4. Navigate to the directory: `cd staraptor/`
  5. Install local dependencies: `bundle install && npm i && bower install`
  6. Run foreman: `foreman start`
  7. Open: [localhost:3000](http://localhost:3000/)
@@ -15,7 +15,7 @@
 ## What's included
 
 ```
-template-starter/
+staraptor/
 ├── source/
 │   ├── javascripts/
 │   │   ├── main.js

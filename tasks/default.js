@@ -4,8 +4,9 @@ var gulp = require('gulp');
 var tasks = [
   'templates',
   'sass',
-  'js',
-  'js:plugins',
+  'scripts',
+  'scripts:vendor',
+  'images',
   'watch'
 ];
 
