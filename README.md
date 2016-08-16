@@ -12,56 +12,6 @@
  6. Run gulp: `gulp`
  7. Open: [localhost:3000](http://localhost:3000/)
 
-## What's included
-
-```
-staraptor/
-├── source/
-│   ├── javascripts/
-│   │   ├── main.js
-│   │   └── plugins.js
-│   │
-│   └── sass/
-│   │   ├── base/
-│   │   ├── components/
-│   │   ├── _variables.sass
-│   │   └── main.sass
-│   │
-│   └── templates/
-│       ├── layouts/
-│       │   └── main.njk
-│       ├── pages/
-│       │   ├── buttons.njk
-│       │   ├── forms.njk
-│       │   ├── grids.njk
-│       │   └── index.njk
-│       ├── partials/
-│       │   ├── _footer.njk
-│       │   ├── _header.njk
-│       │   └── _nav.njk
-│       └── data.json
-│
-└── tasks/
-│   ├── default.js
-│   ├── javascripts.js
-│   ├── sass.js
-│   ├── templates.js
-│   └── watch.js
-│
-├── .bowerrc
-├── .editorconfig
-├── .gitignore
-├── .ruby-version
-├── bower.json
-├── Gemfile
-├── Gemfile.lock
-├── gulp.config.js
-├── gulpfile.js
-├── package.json
-├── Procfile
-└── README.md
-```
-
 ## License
 
 Code released under the [Creative Commons 3.0 br license](https://creativecommons.org/licenses/by/3.0/br/legalcode)
