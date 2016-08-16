@@ -39,9 +39,23 @@ gulp.task('scripts:vendor', function () {
     }))
     .pipe($.size({ title: 'scripts vendor.js', showFiles: true }))
     .pipe(gulp.dest(config.dist.javascripts))
-    .pipe($.rename({suffix: ".min"}))
-    .pipe($.uglify())
-    .pipe($.size({ title: 'Rename and Minify vendor.js', showFiles: true }))
+    .pipe($.plumber.stop());
+});
+
+gulp.task('scripts:min', function () {
+  gulp.src([ config.source.javascripts + '/*.js' ])
+    .pipe($.plumber(config.plumberErrorHandler))
+    .pipe($.include({
+      extensions: 'js',
+      includePaths: [
+        'node_modules',
+        'source/bower',
+        'source/javascripts'
+      ]
+    }))
+    .pipe($.concat('main.min.js'))
+    .pipe($.uglify({ mangle: true }))
+    .pipe($.size({ title: 'build scripts', showFiles: true }))
     .pipe(gulp.dest(config.dist.javascripts))
     .pipe($.plumber.stop());
 });
