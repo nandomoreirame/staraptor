@@ -14,4 +14,4 @@
 
 ## License
 
-Code released under the [Creative Commons 3.0 br license](https://creativecommons.org/licenses/by/3.0/br/legalcode)
+Code released under the [MIT](/LICENSE) License
