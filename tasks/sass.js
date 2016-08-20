@@ -12,8 +12,8 @@ var _includePaths = [
   'source/sass'
 ];
 
-gulp.task('sass', function() {
-  gulp.src([config.source.sass + '/**/*.{scss,sass}'])
+gulp.task('sass', () => {
+  gulp.src([`${config.source.sass}/**/*.{scss,sass}`])
     .pipe($.plumber(config.plumberErrorHandler))
     .pipe($.sass({ includePaths: _includePaths }))
     .pipe($.combineMq())
@@ -27,8 +27,8 @@ gulp.task('sass', function() {
     .pipe($.plumber.stop());
 });
 
-gulp.task('sass:min', function() {
-  gulp.src([config.source.sass + '/**/*.{scss,sass}'])
+gulp.task('sass:min', () => {
+  gulp.src([`${config.source.sass}/**/*.{scss,sass}`])
     .pipe($.plumber(config.plumberErrorHandler))
     .pipe($.sass({ includePaths: _includePaths }))
     .pipe($.combineMq())

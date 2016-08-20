@@ -4,8 +4,8 @@ var gulp   = require('gulp');
 var config = require('../gulp.config.js');
 var $      = require('gulp-load-plugins')();
 
-gulp.task('scripts', function () {
-  gulp.src([ config.source.javascripts + '/main.js' ])
+gulp.task('scripts', () => {
+  gulp.src([ `${config.source.javascripts }/main.js` ])
     .pipe($.plumber(config.plumberErrorHandler))
     .pipe($.include({
       extensions: 'js',
@@ -23,8 +23,8 @@ gulp.task('scripts', function () {
     .pipe($.plumber.stop());
 });
 
-gulp.task('scripts:vendor', function () {
-  gulp.src([ config.source.javascripts + '/vendor.js' ])
+gulp.task('scripts:vendor', () => {
+  gulp.src([ `${config.source.javascripts}/vendor.js` ])
     .pipe($.plumber(config.plumberErrorHandler))
     .pipe($.include({
       extensions: 'js',
@@ -42,8 +42,8 @@ gulp.task('scripts:vendor', function () {
     .pipe($.plumber.stop());
 });
 
-gulp.task('scripts:min', function () {
-  gulp.src([ config.source.javascripts + '/*.js' ])
+gulp.task('scripts:min', () => {
+  gulp.src([ `${config.source.javascripts}/*.js` ])
     .pipe($.plumber(config.plumberErrorHandler))
     .pipe($.include({
       extensions: 'js',
