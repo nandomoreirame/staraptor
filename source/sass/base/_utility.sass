@@ -71,12 +71,15 @@
 //
 
 .no-bullets
-  margin: 0
-  padding: 0
+  list-style: none
+
+.list-unstyled
+  padding-left: 0
   list-style: none
 
 .list-inline
-  @extend .no-bullets
+  @extend .list-unstyled
+  margin-left: -5px
 
   li
     display: inline-block
