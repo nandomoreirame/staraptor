@@ -4,8 +4,6 @@ GEM
     bourbon (4.2.7)
       sass (~> 3.4)
       thor (~> 0.19)
-    foreman (0.82.0)
-      thor (~> 0.19.1)
     neat (1.8.0)
       sass (>= 3.3)
       thor (~> 0.19)
@@ -17,7 +15,6 @@ PLATFORMS
 
 DEPENDENCIES
   bourbon (~> 4.2)
-  foreman (~> 0.82)
   neat (~> 1.7)
   sass (~> 3.4)
 
